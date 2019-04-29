@@ -65,12 +65,15 @@ body { margin: 0; min-width: 1180px;}
 .bestitem01 { margin-top: 25px; }
 .bestitem01 ul{ list-style: none; margin: 0; padding: 0; }
 .bestitem01 li{ display: inline-block; width: 290px; border: 1px solid #dadada;  margin-right: -2px;}
-.bestitem01_btn button { display: block; background: #0d1720; color: #ddd; border: 0; width: 180px; height: 50px; padding: 0;  margin: 20px auto;}
+
+/* bestitem01_btn */
+.bestitem01_btn { display: inline-block; width: 1180px; margin: 20px 0;  }
+.bestitem01_btn button { display: block; background: #0d1720; color: #ddd; border: 0; width: 180px; height: 50px; padding: 0; margin: 0 auto;}
 
 /* prdinfo */
 .prdinfo { display: block; padding: 0 5px 15px 5px; text-align: center; }
 .prdinfo a{ color: black; text-decoration: none;  }
-.prdinfo span { display: inline-block;  }
+.prdinfo span { display: inline-block; }
 .prdinfo .prdImg { display: block; margin: 0; width: 100%; }
 .prdinfo .prdName  { display: block; font-weight: 550; line-height: 10px; }
 .prdinfo .prdDesc  { display: block; color: gray; font-size: 14px; line-height: 3px; padding-top: 10px;}
