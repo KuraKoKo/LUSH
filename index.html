@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="./lib/css/main.css"/>
     <!-- bxslider -->
     <link rel="stylesheet" href="./lib/css/jquery.bxslider.css"/>
-    <!-- fontwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- jquery -->
     <script src="./lib/js/jquery.min.js"></script>
     <title>LUSH</title>
 </head>
@@ -56,9 +54,9 @@
                     <li><a href="#">EVENT</a></li>
                     <!-- nav_icon -->
                     <div class="nav_icon">
-                        <li><a href="#"><i class="fas fa-search fa"></i></a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart fa"></i></a></li>
-                        <li><a href="#"><i class="fas fa-user fa"></i></a></li>
+                        <li><a href="#"><img src="img/search.png" alt="검색"/></a></li>
+                        <li><a href="#"><img src="img/cart.png" alt="장바구니"/></a></li>
+                        <li><a href="#"><img src="img/user.png" alt="유저"/></a></li>
                     </div>
                     <!-- //nav_icon -->
                 </ul>
@@ -194,15 +192,11 @@
 
     $(document).ready(function(){
         $('.nav_menu ul > li > a').mouseenter(function(){
-        if ($(this).attr('class') != 'active'){
-            $('.nav_menu li ul').slideUp();
             $(this).next().slideToggle();
-            $('.nav_menu ul > li > a').removeClass('active');
             $(this).addClass('active');
-        }
   });
 
-    $('.nav_menu li').mouseleave(function(){
+    $('.nav_menu ul li').mouseleave(function(){
         $('.nav_menu li ul').slideUp();
         $('.nav_menu ul > li > a').removeClass('active');
   });
