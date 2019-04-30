@@ -15,7 +15,7 @@ body { margin: 0; min-width: 1180px;}
 .nav_menu { margin: 0; padding: 0; text-align: center; }
 .nav_menu>ul{  list-style: none; margin: 0 auto; padding-left: 320px }
 .nav_menu>ul>li{ display: inline-block;  padding: 40px 0 0 50px; margin: 0 auto;}
-.nav_menu>ul>li>a{ text-decoration: none; color: white; font-weight: bold; vertical-align: middle; }
+.nav_menu>ul>li>a{ text-decoration: none; color: #fff; font-weight: bold; vertical-align: middle; }
 
 /* nav_icon */
 .nav_icon { display: inline-block; margin: 0; padding: 0; }
@@ -25,7 +25,7 @@ body { margin: 0; min-width: 1180px;}
 /* nav_list */
 .nav_list { display: none; width: 500px; height: 250px; list-style: none; position: absolute; z-index: 1000; background: #dadada; }
 .nav_list li { padding-bottom: 3px; }
-.nav_menu a { text-decoration: none; color: black; }
+.nav_menu a { text-decoration: none; color: #000; }
 
 /* slide */
 .slide { width: auto; margin: 0 auto; }
@@ -39,8 +39,8 @@ body { margin: 0; min-width: 1180px;}
 /* main_icon */
 .main_icon { width: 100%; text-align: center; }
 .main_icon ul{ list-style: none; margin: 0; padding: 0; }
-.main_icon li { display: inline-block; border: 2px solid black; border-radius: 10px; padding: 2px; background: black; margin: 0 40px; }
-.main_icon a { color: white; text-decoration: none; }
+.main_icon li { display: inline-block; border: 2px solid #000; border-radius: 10px; padding: 2px; background: #000; margin: 0 40px; }
+.main_icon a { color: #fff; text-decoration: none; }
 
 /* main_aboutlush */
 .main_aboutlush { display: inline-block; width: 540px; height: 360px; margin-top: 30px;}
@@ -72,15 +72,15 @@ body { margin: 0; min-width: 1180px;}
 
 /* prdinfo */
 .prdinfo { display: block; padding: 0 5px 15px 5px; text-align: center; }
-.prdinfo a{ color: black; text-decoration: none;  }
+.prdinfo a{ color: #000; text-decoration: none;  }
 .prdinfo span { display: inline-block; }
 .prdinfo .prdImg { display: block; margin: 0; width: 100%; }
 .prdinfo .prdName  { display: block; font-weight: 550; line-height: 10px; }
-.prdinfo .prdDesc  { display: block; color: gray; font-size: 14px; line-height: 3px; padding-top: 10px;}
+.prdinfo .prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px;}
 .prdinfo .prdPrice { display: block; padding-top: 20px;}
 
 /* footer */
-#footer { position: relative; width:100%; background: black; padding-top: 50px; margin: 0 auto;}
+#footer { position: relative; width:100%; background: #000; padding-top: 50px; margin: 0 auto;}
 
 /* footer_logo */
 .footer_logo { display: inline-block; }
@@ -89,5 +89,5 @@ body { margin: 0; min-width: 1180px;}
 .footer_list { display: inline-block; text-align: center; }
 .footer_list ul { list-style: none; margin: 0; padding: 0; padding-left: 100px }
 .footer_list li { display: inline-block; }
-.footer_list a { text-decoration: none; color: white; }
+.footer_list a { text-decoration: none; color: #fff; }
 .footer_list a:nth-child(3) { font-weight: bold }
