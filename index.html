@@ -18,9 +18,11 @@
     <div id="header">
         <!-- nav -->
         <div class="nav">
+        <!-- logo -->
             <div id="logo">
                 <a href="#"><img src="./img/logo.png" alt="logo"/></a>
             </div>
+        <!-- //logo -->
             <!-- nav_menu -->
             <div class="nav_menu">
                 <ul>
@@ -52,11 +54,13 @@
                     <li><a href="#">SHOPS</a></li>
                     <li><a href="#">SPA</a></li>
                     <li><a href="#">EVENT</a></li>
+                    <!-- nav_icon -->
                     <div class="nav_icon">
                         <li><a href="#"><i class="fas fa-search fa"></i></a></li>
                         <li><a href="#"><i class="fas fa-shopping-cart fa"></i></a></li>
                         <li><a href="#"><i class="fas fa-user fa"></i></a></li>
                     </div>
+                    <!-- //nav_icon -->
                 </ul>
             </div>
             <!-- //nav_menu -->
@@ -76,7 +80,7 @@
     <div id="content">
         <!-- main_container -->
         <div class="main_container">          
-            
+            <!-- main_about -->
             <div class="main_about">
                 <div class="main_icon">
                     <ul>
@@ -103,11 +107,12 @@
                         </dd>
                     </dl>
                 </div>
+                
                 <div class="main_explan">
                     <img src="./img/bath-bubble.png" alt="differnt"/>
                 </div>
             </div>
-
+            <!-- //main_about -->
             <!-- bestitem -->
             <div class="bestitem">
                 <div class="bestitem_title">
@@ -186,7 +191,22 @@
 </body>
 </html>
 <script>
+
     $(document).ready(function(){
+        $('.nav_menu ul > li > a').mouseenter(function(){
+        if ($(this).attr('class') != 'active'){
+            $('.nav_menu li ul').slideUp();
+            $(this).next().slideToggle();
+            $('.nav_menu ul > li > a').removeClass('active');
+            $(this).addClass('active');
+        }
+  });
+
+    $('.nav_menu li ul').mouseleave(function(){
+        $('.nav_menu li ul').slideUp();
+        $('.nav_menu ul > li > a').removeClass('active');
+  });
+
     $('.bxslider').bxSlider({
         mode: 'fade',
         auto: true,
