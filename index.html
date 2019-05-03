@@ -24,7 +24,8 @@
             <!-- nav_menu -->
             <div class="nav_menu">
                 <ul>
-                    <li><a href="#">PRODUCTS</a>
+                    <li class="f_nav"><a href="#">PRODUCTS</a>
+                    <div class="gnbnav">
                         <ul class="nav_list">
                             <li class="f_list"><a href="#">PRODUCTS</a></li>
                             <li><a href="#">베스트</a></li>
@@ -37,8 +38,10 @@
                             <li><a href="#">퍼퓸</a></li>
                             <li><a href="#">선물세트</a></li>
                         </ul>
+                    </div>
                     </li>
-                    <li><a href="#">BRAND</a>
+                    <li class="f_nav"><a href="#">BRAND</a>
+                    <div class="gnbnav">
                         <ul class="nav_list">
                             <li class="f_list"><a href="#">BRAND</a></li>
                             <li><a href="#">러쉬</a></li>
@@ -48,6 +51,7 @@
                             <li><a href="#">젤러쉬</a></li>
                             <li><a href="#">ABOUT LUSH</a></li>
                         </ul>
+                    </div>    
                     </li>
                     <li><a href="#">SHOPS</a></li>
                     <li><a href="#">SPA</a></li>
@@ -82,11 +86,11 @@
             <div class="main_about">
                 <div class="main_icon">
                     <ul>
-                        <li><a href="#">마이페이지</a></li>
-                        <li><a href="#">주문목록/배송조회</a></li>
-                        <li><a href="#">스파 예약현황</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#"><img src="/img/content/mypage.png" alt="마이페이지"/>마이페이지</a></li>
+                        <li><a href="#"><img src="/img/content/product.png" alt="주문목록"/>주문목록/배송조회</a></li>
+                        <li><a href="#"><img src="/img/content/spa.png" alt="스파"/>스파 예약현황</a></li>
+                        <li><a href="#"><img src="/img/content/event.png" alt="이벤트"/>이벤트</a></li>
+                        <li><a href="#"><img src="/img/content/faq.png" alt="고객센터"/>고객센터</a></li>
                     </ul>
                 </div>
                 <div class="main_aboutlush">
@@ -126,7 +130,7 @@
                                         <span class="prdDesc">#데일리팩 #디데이 전날</span>
                                         <span class="prdPrice">￦ 20,000</span>
                                     </a>
-                                </div>
+                                </div>ㅈ
                             </li>
                             <li>
                                 <div class="prdinfo">
@@ -168,19 +172,44 @@
     <!-- //content -->
     <!-- footer -->
     <div id="footer">
-        <div class="footer_logo">
-            <img src="./img/logo.png" />
+        <!-- footer_container -->
+        <div class="footer_container">
+
+            <div class="footer_logo">
+                <img src="./img/logo.png" alt="푸터로고"/>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li><a href="#">스카우트</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">대량문의</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- footer_wrap -->
+            <div class="footer_wrap">
+                <div class="footer_info">
+                    <p>고객센터</p>
+                    <p>Tel: 1644-2357</p>
+                    <p>Fax: 02-795-7516</p>
+                    <p>월~금 10:00 ~ 17:00</p>
+                    <p>(점심시간 12:00 ~ 13:00)</p>
+                    <p>문의메일:webmaster@lush.co.kr</p>
+                </div>
+                <div class="footer_adress">
+                    <p>대표이사: 우미령</p>
+                    <p>서울특별시 서초구 서운로 138(서초동아타워)6층</p>
+                    <p>사업자 등록번호:201-81-77964</p>
+                    <p>통신판매업 신고번호:2012-서울서초=0647</p>
+                    <p>개인정보보호책임자:우승용</p>
+                    <p>Copyright ⓒ 2019 SeongJin Noh All right reserved.</p>
+                </div>
+            </div>
+            <!-- footer_wrap -->
         </div>
-        <div class="footer_list">
-            <ul>
-                <li><a href="#">스카우트</a></li>
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">대량문의</a></li>
-                <li><a href="#">고객센터</a></li>
-            </ul>
-        </div> 
+        <!-- //footer_container -->
     </div>
     <!-- //footer -->
     <script src="./lib/js/jquery.min.js"></script>
@@ -189,15 +218,22 @@
 </body>
 </html>
 <script>
-
     $(document).ready(function(){
-        $('.nav_menu ul > li > a').mouseenter(function(){
-            $(this).next().slideToggle();
-            $(this).addClass('active');
-  });
 
-    $('.nav_menu ul li').mouseleave(function(){
-        $('.nav_menu li ul').slideUp();
+        if($('.nav_menu ul > li').attr('class') == 'active'){
+            $('.nav_menu ul > li > a').removeClass('active');
+        }
+        
+        $('.f_nav > a').mouseenter(function(){
+        if ($(this).attr('class') != 'active'){
+            $('.nav_list').slideUp();
+            $(this).next().slideToggle();
+            $('.f_nav > a').removeClass('active');
+            $(this).addClass('active');
+            }
+  });
+    $('.f_nav, .nav_list').mouseleave(function(){
+        $('.nav_list').slideUp();
         $('.nav_menu ul > li > a').removeClass('active');
   });
 

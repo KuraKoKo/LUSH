@@ -13,20 +13,23 @@ body { margin: 0; min-width: 1180px;}
 
 /* nav_menu */
 .nav_menu { margin: 0; padding: 0; text-align: center; }
-.nav_menu>ul{ list-style: none; margin: 0 auto; padding-left: 320px }
-.nav_menu>ul>li{ display: inline-block; line-height: 85px}
-.nav_menu>ul>li>a{ text-decoration: none; color: #fff; font-weight: bold; vertical-align: middle; padding: 0 30px 45px; }
+.nav_menu>ul{ list-style: none; margin: 0 auto; padding-left: 180px; }
+.nav_menu>ul>li{ display: inline-block; line-height: 85px; padding-bottom: 20px; }
+.nav_menu>ul>li>a{ text-decoration: none; color: #fff; font-weight: bold; vertical-align: middle; padding: 0 30px 50px; }
 
 /* nav_icon */
-.nav_icon { display: inline-block; margin: 0; padding: 0;}
+.nav_icon { display: inline-block; margin: 0; padding: 0; vertical-align: middle;}
 .nav_icon li { display: inline-block; padding-left: 50px; }
 .nav_icon a { vertical-align: middle; }
 .nav_icon img { width: 30px; }
 
+/* gnbnav */
+.gnbnav { }
+
 /* nav_list */
-.nav_list { display: none; width: 100%; height: 200px; list-style: none; position: absolute; top: 95px; left: 0; z-index: 1000; background: #dadada; }
-.nav_list .f_list { float: left; font-size: 30px; font-weight: bold; padding-top: 55px; padding-bottom: 0; }
-.nav_list li { display: inline-block; padding-bottom: 3px; text-align: center; padding: 0 30px 0 0; }
+.nav_list { display: none; width: 100%; height: 200px; list-style: none; position: absolute; top: 90px; left: 0; z-index: 1000; background: #dadada; padding: 0;}
+.nav_list .f_list {  font-size: 30px; font-weight: bold; padding: 0; }
+.nav_list li { display: inline-block; padding: 0;  }
 .nav_list a { text-decoration: none; color: #000; }
 
 /* slide */
@@ -41,11 +44,12 @@ body { margin: 0; min-width: 1180px;}
 /* main_icon */
 .main_icon { width: 100%; text-align: center; }
 .main_icon ul{ list-style: none; margin: 0; padding: 0; }
-.main_icon li { display: inline-block; border: 2px solid #000; border-radius: 10px; padding: 2px; background: #000; margin: 0 40px; }
-.main_icon a { color: #fff; text-decoration: none; }
+.main_icon li { display: inline-block; border: 2px solid #000; border-radius: 20px; padding: 10px; margin: 0 45px;}
+.main_icon a { display: inline-block; color: #000; text-decoration: none;}
+.main_icon img { display: block; margin: 0 auto;}
 
 /* main_aboutlush */
-.main_aboutlush { display: inline-block; width: 540px; height: 360px; margin-top: 30px;}
+.main_aboutlush { display: inline-block; width: 540px; height: 360px; margin-top: 50px;}
 .main_aboutlush dl { text-align: center; }
 .main_aboutlush dt span { display: block; padding-top: 20px; }
 .main_aboutlush dd { margin: 0; }
@@ -82,14 +86,29 @@ body { margin: 0; min-width: 1180px;}
 .prdinfo .prdPrice { display: block; padding-top: 20px;}
 
 /* footer */
-#footer { position: relative; width:100%; background: #000; padding-top: 50px; margin: 0 auto;}
+#footer { position: relative; width:100%; height: 300px; padding: 50px 0;background: #000;}
+
+/* footer_container */
+.footer_container { width: 1180px; margin: 0 auto; }
 
 /* footer_logo */
-.footer_logo { display: inline-block; }
+.footer_logo { display: inline-block; width: 300px; padding-left: 100px; vertical-align: top;}
 
 /* footer_list */
-.footer_list { display: inline-block; text-align: center; }
-.footer_list ul { list-style: none; margin: 0; padding: 0; padding-left: 100px }
-.footer_list li { display: inline-block; }
-.footer_list a { text-decoration: none; color: #fff; }
+.footer_list { display: inline-block; text-align: center; vertical-align: top; }
+.footer_list ul { list-style: none; margin: 0; padding: 0; }
+.footer_list li { display: inline-block;}
+.footer_list a { text-decoration: none; color: #fff; padding-right: 20px; font-size: 12px }
 .footer_list a:nth-child(3) { font-weight: bold }
+
+/* footer_wrap */
+.footer_wrap { width: 1180px; }
+
+/* footer_info  */
+.footer_info { display: inline-block; width: 490px; padding-left: 100px}
+.footer_info p {  color: #fff; font-size: 13px;  }
+.footer_info p:first-of-type { font-weight: bold; font-size: 20px; }
+
+/* footer_adress */
+.footer_adress { display: inline-block; width: 540px; padding-top: 50px;  }
+.footer_adress p { color: #fff; font-size: 13px; }
