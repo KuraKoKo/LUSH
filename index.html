@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./lib/css/jquery.bxslider.css"/>
     <!-- jquery -->
     <script src="./lib/js/jquery.min.js"></script>
-    <script src="./lib/js/default.js"></script>
     <title>LUSH</title>
     <style>
     
@@ -222,33 +221,16 @@
     <script src="./lib/js/jquery.min.js"></script>
     <!-- bxslider -->
     <script src="./lib/js/jquery.bxslider.js"></script>
+    <!-- default.js -->
+    <script src="./lib/js/default.js"></script>
 </body>
-</html>
 <script>
-    $(document).ready(function(){
-        /*
-        if($('.nav_menu ul > li').attr('class') == 'active'){
-            $('.nav_menu ul > li > a').removeClass('active');
-        }
-        */
-        $('.f_nav > a').mouseenter(function(){
-        if ($(this).attr('class') != 'active'){
-            $('.nav_list').slideUp();
-            $('.nav_menu ul > li > a').removeClass('active');
-            $(this).next().slideToggle();  
-            $(this).addClass('active');
-            }
-    });
-    
-    $('.f_nav, .nav_list').mouseleave(function(){
-        $('.nav_list').slideUp();
-        $('.f_nav > a').removeClass('active');
-    });
-
+    // bxslider
     $('.bxslider').bxSlider({
-        mode: 'fade',
-        auto: true,
-        pause: 2500,
-    });
+    mode: 'fade',
+    auto: true,
+    pause: 2500,
 });
 </script>
+</html>
+
