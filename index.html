@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./lib/css/main.css"/>
+    <link rel="stylesheet" href="./lib/css/tablet.css" media="(min-width: 769px) and (max-width: 1179px)"/>
+    <link rel="stylesheet" href="./lib/css/mobile.css" media="(min-width: 320px) and (max-width: 768px)"/>
     <!-- bxslider -->
     <link rel="stylesheet" href="./lib/css/jquery.bxslider.css"/>
     <!-- jquery -->
     <script src="./lib/js/jquery.min.js"></script>
+    <script src="./lib/js/default.js"></script>
     <title>LUSH</title>
+    <style>
+    
+    </style>
 </head>
 <body>
     <!-- header -->
@@ -25,33 +32,33 @@
             <div class="nav_menu">
                 <ul>
                     <li class="f_nav"><a href="#">PRODUCTS</a>
-                    <div class="gnbnav">
                         <ul class="nav_list">
-                            <li class="f_list"><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">베스트</a></li>
-                            <li><a href="#">신제품</a></li>
-                            <li><a href="#">바디</a></li>
-                            <li><a href="#">페이스</a></li>
-                            <li><a href="#">프로모션</a></li>
-                            <li><a href="#">헤어</a></li>
-                            <li><a href="#">메이크업</a></li>
-                            <li><a href="#">퍼퓸</a></li>
-                            <li><a href="#">선물세트</a></li>
+                            <div class="gnbnav">
+                                <li class="f_list"><a href="#">PRODUCTS</a></li>
+                                <li><a href="#">베스트</a></li>
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">바디</a></li>
+                                <li><a href="#">페이스</a></li>
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">헤어</a></li>
+                                <li><a href="#">메이크업</a></li>
+                                <li><a href="#">퍼퓸</a></li>
+                                <li><a href="#">선물세트</a></li>
+                            </div>
                         </ul>
-                    </div>
                     </li>
                     <li class="f_nav"><a href="#">BRAND</a>
-                    <div class="gnbnav">
                         <ul class="nav_list">
-                            <li class="f_list"><a href="#">BRAND</a></li>
-                            <li><a href="#">러쉬</a></li>
-                            <li><a href="#">채러티 팟</a></li>
-                            <li><a href="#">원재료</a></li>
-                            <li><a href="#">아티클</a></li>
-                            <li><a href="#">젤러쉬</a></li>
-                            <li><a href="#">ABOUT LUSH</a></li>
+                            <div class="gnbnav">
+                                <li class="f_list"><a href="#">BRAND</a></li>
+                                <li><a href="#">러쉬</a></li>
+                                <li><a href="#">채러티 팟</a></li>
+                                <li><a href="#">원재료</a></li>
+                                <li><a href="#">아티클</a></li>
+                                <li><a href="#">젤러쉬</a></li>
+                                <li><a href="#">ABOUT LUSH</a></li>
+                            </div>
                         </ul>
-                    </div>    
                     </li>
                     <li><a href="#">SHOPS</a></li>
                     <li><a href="#">SPA</a></li>
@@ -80,8 +87,8 @@
     <!-- //header -->
     <!-- content -->
     <div id="content">
-        <!-- main_container -->
-        <div class="main_container">          
+        <!-- wrap -->
+        <div class="wrap">          
             <!-- main_about -->
             <div class="main_about">
                 <div class="main_icon">
@@ -130,7 +137,7 @@
                                         <span class="prdDesc">#데일리팩 #디데이 전날</span>
                                         <span class="prdPrice">￦ 20,000</span>
                                     </a>
-                                </div>ㅈ
+                                </div>
                             </li>
                             <li>
                                 <div class="prdinfo">
@@ -167,7 +174,7 @@
             </div>
             <!-- //bestitem -->
         </div>
-        <!-- //main_container -->
+        <!-- //wrap -->
     </div>
     <!-- //content -->
     <!-- footer -->
@@ -219,23 +226,24 @@
 </html>
 <script>
     $(document).ready(function(){
-
+        /*
         if($('.nav_menu ul > li').attr('class') == 'active'){
             $('.nav_menu ul > li > a').removeClass('active');
         }
-        
+        */
         $('.f_nav > a').mouseenter(function(){
         if ($(this).attr('class') != 'active'){
             $('.nav_list').slideUp();
-            $(this).next().slideToggle();
-            $('.f_nav > a').removeClass('active');
+            $('.nav_menu ul > li > a').removeClass('active');
+            $(this).next().slideToggle();  
             $(this).addClass('active');
             }
-  });
+    });
+    
     $('.f_nav, .nav_list').mouseleave(function(){
         $('.nav_list').slideUp();
-        $('.nav_menu ul > li > a').removeClass('active');
-  });
+        $('.f_nav > a').removeClass('active');
+    });
 
     $('.bxslider').bxSlider({
         mode: 'fade',
