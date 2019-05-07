@@ -1,15 +1,14 @@
 @charset "utf-8";
 
 /* logo */
-#logo { width: auto; text-align: center;}
-#logo a { position: relative; }
-#logo a img { display: inline-block; margin: 0; }
+#logo { width: 90px;  }
+#logo a { position: relative; margin: 0 auto; left: 50px; }
+#logo a img { display: block; margin: 0; }
 
 /* nav_menu */
 .nav_menu { width: 30px; display: block; position: absolute; left: 40px; top: 20%; border-bottom: 1px solid #fff; padding-bottom: 20px }
 .nav_menu::before { width: 30px; content: "" ; position: absolute; left: 0; top: 10px; border-bottom: 1px solid #fff; padding-bottom: 20px}
 .nav_menu::after { width: 30px; content: ""; position: absolute; left: 0; top: 20px; border-bottom: 1px solid #fff; padding-bottom: 20px}
-.nav_menu:active {  }
 
 .nav_menu ul{ display: none; }
 .nav_icon { display: block; }
