@@ -6,16 +6,27 @@
 #logo a img { display: block; margin: 0; }
 
 /* nav_menu */
-.nav_menu { width: 30px; display: block; position: absolute; left: 40px; top: 20%; border-bottom: 1px solid #fff; padding-bottom: 20px }
-.nav_menu::before { width: 30px; content: "" ; position: absolute; left: 0; top: 10px; border-bottom: 1px solid #fff; padding-bottom: 20px}
-.nav_menu::after { width: 30px; content: ""; position: absolute; left: 0; top: 20px; border-bottom: 1px solid #fff; padding-bottom: 20px}
+.nav_menu { display: none;}
 
-.nav_menu>ul{ display: none; }
-.nav_icon { display: block; }
+/* m_menu */
+.m_menu { display: block; cursor: pointer; width: 30px; height: 30px; position: absolute; top: 40px; left: 0; padding: 0 50px; }
+.m_menu span { display: block; ; width: 30px;  border-bottom: 1px solid #fff; position: absolute;}
+.m_top { top: 0; }
+.m_middle { top: 10px }
+.m_bottom { bottom: 10px; }
+
+/* m_list */
+.m_list { display: block; background: #000; position: absolute; top: -40px; left: 0px; }
+.m_list>ul { margin: 30px 10px; padding: 0; }
+.m_list>ul>li { list-style: none; margin-bottom: 50px; padding: 0 50px; }
+.m_list>ul>li>a { text-decoration: none; color: white }
 
 /*  slide */
 .slide { width: auto; margin: 0; }
 
 /*  content */
-#content {   }
+#content { display: none; }
+
+/* footer */
+#footer { display: none; }
     

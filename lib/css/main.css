@@ -32,6 +32,9 @@ body { margin: 0;}
 .nav_icon a { vertical-align: middle; }
 .nav_icon img { width: 30px; }
 
+/* m_menu */
+.m_menu { display: none; }
+
 /* slide */
 .slide { width: auto; margin: 0 auto; }
 
