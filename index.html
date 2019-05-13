@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./lib/css/main.css"/>
-    <link rel="stylesheet" href="./lib/css/tablet.css" media="(min-width: 320px) and (max-width: 1179px)"/>
+    <link rel="stylesheet" href="./lib/css/tablet.css" media="(min-width: 769px) and (max-width: 1179px)"/>
+    <link rel="stylesheet" href="./lib/css/mobile.css" media="(min-width: 320px) and (max-width: 768px)"/>
     <!-- bxslider -->
     <link rel="stylesheet" href="./lib/css/jquery.bxslider.css"/>
     <!-- jquery -->
@@ -80,15 +81,43 @@
                     <span class="m_middle"></span>
                     <span class="m_bottom"></span>
                 </div>
+                <!-- m_list -->
                 <div class="m_list">
                     <ul>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">BARND</a></li>
+                        <li><a href="#">PRODUCT</a>
+                            <ul class="nav_list">
+                                <div class="m_gnb">
+                                    <li class="f_list"><a href="#">PRODUCTS</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">바디</a></li>
+                                    <li><a href="#">페이스</a></li>
+                                    <li><a href="#">프로모션</a></li>
+                                    <li><a href="#">헤어</a></li>
+                                    <li><a href="#">메이크업</a></li>
+                                    <li><a href="#">퍼퓸</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="#">BARND</a>
+                            <ul class="nav_list">
+                                <div class="m_gnb">
+                                    <li class="f_list"><a href="#">BRAND</a></li>
+                                    <li><a href="#">러쉬</a></li>
+                                    <li><a href="#">채러티 팟</a></li>
+                                    <li><a href="#">원재료</a></li>
+                                    <li><a href="#">아티클</a></li>
+                                    <li><a href="#">젤러쉬</a></li>
+                                    <li><a href="#">ABOUT LUSH</a></li>
+                                </div>
+                            </ul>
+                        </li>
                         <li><a href="#">SHOP</a></li>
                         <li><a href="#">SPA</a></li>
                         <li><a href="#">EVENT</a></li>
                 <div class="m_close">
-                    <span>X</span>
+                    <span>X</s4pan>
                 </div>
                     </ul>
                 </div>
@@ -202,8 +231,8 @@
     <!-- //content -->
     <!-- footer -->
     <div id="footer">
-        <!-- footer_container -->
-        <div class="footer_container">
+        <!-- footer_content -->
+        <div class="footer_content">
 
             <div class="footer_logo">
                 <img src="./img/logo.png" alt="푸터로고"/>
