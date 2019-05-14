@@ -4,7 +4,7 @@ body { margin: 0;}
 #header { position: relative; margin: 0 auto;}
 
 /* nav */
-.nav { background-image: url(../../img/background_img.jpg); width: 100%; height: 100px; position: relative; z-index: 3000;}
+.nav { background-image: url(../../img/background_img.png); width: 100%; height: 100px; position: relative; z-index: 3000;}
 
 /* logo */
 #logo { width: 1180px; margin: 0 auto; }
@@ -71,22 +71,22 @@ body { margin: 0;}
 .bestitem_title h2{ display: inline-block; position: relative; background: #fff; color: #222; margin: 0 auto; line-height: 20px; padding: 2px 20px;} 
 
 /* bestitem01 */
-.bestitem01 { margin-top: 25px; }
+.bestitem01 { margin-top: 20px; }
 .bestitem01 ul{ list-style: none; margin: 0; padding: 0; }
-.bestitem01 li{ display: inline-block; width: 290px; border: 1px solid #dadada;  margin-right: -2px;}
-
-/* bestitem01_btn */
-.bestitem01_btn { display: inline-block; width: 1180px; margin: 20px 0;  }
-.bestitem01_btn button { display: block; background: #0d1720; color: #ddd; border: 0; width: 180px; height: 50px; padding: 0; margin: 0 auto;}
+.bestitem01 li{ display: inline-block; text-align: center; }
 
 /* prdinfo */
-.prdinfo { display: block; padding: 0 5px 15px 5px; text-align: center; }
+.prdinfo { display: inline-block; padding: 0 0 15px 5px; text-align: center; }
 .prdinfo a{ color: #000; text-decoration: none;  }
 .prdinfo span { display: inline-block; }
-.prdinfo .prdImg { display: block; margin: 0; width: 100%; }
+.prdinfo .prdImg { display: inline-block; margin: 0; }
 .prdinfo .prdName  { display: block; font-weight: 550; line-height: 10px; }
-.prdinfo .prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px;}
+.prdinfo .prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px; }
 .prdinfo .prdPrice { display: block; padding-top: 20px;}
+
+/* bestitem01_btn */
+.bestitem01_btn { display: inline-block; width: 100%; margin: 20px 0; }
+.bestitem01_btn button { display: block; background: #0d1720; color: #ddd; border: 0; width: 180px; height: 50px; padding: 0; margin: 0 auto; cursor: pointer}
 
 /* footer */
 #footer { position: relative; width:100%; height: 300px; padding: 50px 0;background: #000;}
