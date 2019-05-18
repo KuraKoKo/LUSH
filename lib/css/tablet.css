@@ -78,7 +78,7 @@ html,body { width: 100%; height: 100%; }
 .bath ul { padding: 0; margin: 0; }
 .bath ul li { list-style: none; }
 .bath ul li b { font-size: 20px;}
-.bath ul li img { width: 100%; display: block }
+.bath ul li img { width: 50%; display: block; margin: 0 auto}
 .p_bath { font-size: 15px; }
 .p_bath b{ font-size: 15px !important; }
 
@@ -87,7 +87,7 @@ html,body { width: 100%; height: 100%; }
  .bubble ul { padding: 0; margin: 0; }
  .bubble ul li { width: 100%; list-style: none; margin-top: 10px }
  .bubble ul li b:first-child { font-size: 20px; }
- .bubble ul li img { width: 100%; display: block }
+ .bubble ul li img { width: 50%; display: block; margin: 0 auto }
  .p_bubble { font-size: 15px; }
  .p_bubble b{ font-size: 15px !important; }
 
