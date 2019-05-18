@@ -41,7 +41,7 @@ html,body { width: 100%; height: 100%; }
 .wrap { width: 100%; }
 
 /* bestitem */
-.bestitem { width: 100%; margin-top: 10px; }
+.bestitem { width: 100%; margin-top: 5px; }
 
 /* bestitem_title */
 .bestitem_title { width: 100%; display: block;}
@@ -85,7 +85,6 @@ html,body { width: 100%; height: 100%; }
  .bubble ul { padding: 0; margin: 0; }
  .bubble ul li { list-style: none; }
  .bubble ul li b:first-child { font-size: 20px; }
- .bubble ul li b {  }
  .bubble ul li img { width: 585px }
  .p_bubble { font-size: 15px; }
  .p_bubble b{ font-size: 15px !important; }
