@@ -43,7 +43,7 @@ html,body { width: 100%; height: 100%; }
 .wrap { width: 100%; }
 
 /* bestitem */
-.bestitem { width: 100%; }
+.bestitem { width: 100%; margin-top: 10px }
 
 /* bestitem_title */
 .bestitem_title { width: 100%; display: block;}
@@ -54,15 +54,43 @@ html,body { width: 100%; height: 100%; }
 /* bestitem01_btn */
 .bestitem01_btn { display: none; }
 
-/* main_icon */
-.main_icon { display: none; }
+/* main_about */
+.main_about { width: 100%; margin: 0; height: 550px; background: #e0e0e0;}
 
 /* main_aboutlush */
-.main_aboutlush { display: block; width: auto; margin: 0; }
-.main_aboutlush dt img { width: 370px; }
-/* main_explan */
-.main_explan { display: block; width: 100%; float: none; margin: 0; padding: 0; height: auto;}
-.main_explan img { width: 590px; display: block; padding: 0; margin: 0 auto; }
+.main_aboutlush { width: 100%; display: block; margin: 0 auto; padding: 0; }
+
+/* about_lush */
+.about_lush { width: 100%; display: inline-block; margin: 0; padding: 0; height: auto;}
+.about_lush img { display: block; margin: 0 auto; margin-top: 10px }
+
+/* main_text */
+ .main_text { width: 100%; height: 0; margin-top: 50px; }
+
+ /* main_explan */
+ .main_explan { width: 1180px; margin: 0 auto; display: none !important;}
+ .main_explan > h2 { text-align: center; }
+ .main_explan p { text-align: center; }
+ .main_explan p:first-child { margin: 0; }
+
+ /* bath */
+.bath { width: 585px; display: inline-block; }
+.bath ul { padding: 0; margin: 0; }
+.bath ul li { list-style: none; }
+.bath ul li b { font-size: 20px;}
+.bath ul li img { width: 585px }
+.p_bath { font-size: 15px; }
+.p_bath b{ font-size: 15px !important; }
+
+ /* bubble */
+ .bubble { width: 585px; display: inline-block; }
+ .bubble ul { padding: 0; margin: 0; }
+ .bubble ul li { list-style: none; }
+ .bubble ul li b:first-child { font-size: 20px; }
+ .bubble ul li b {  }
+ .bubble ul li img { width: 585px }
+ .p_bubble { font-size: 15px; }
+ .p_bubble b{ font-size: 15px !important; }
 
 /* footer */
 #footer { display: block; height: auto; padding: 0; overflow: hidden;}
