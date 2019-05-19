@@ -21,7 +21,7 @@ html,body { width: 100%; height: 100%; }
 .m_bottom { bottom: 10px; }
 
 /* m_list */
-.m_list { display: none; background: #000; position: absolute; top: -40px; left: 0px; width: 100%; height: 100vmax;}
+.m_list { display: none; background: #000; position: absolute; top: -40px; left: 0px; width: 100%; height: 100vh;}
 .m_list>ul { display: block; margin: 50px 0 0 50px; padding: 0; }
 .m_list>ul>li { width: 80px; list-style: none; margin-bottom: 35px; padding: 0;}
 .m_list>ul>li>a { text-decoration: none; color: white; margin-bottom: 50px}
