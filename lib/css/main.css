@@ -18,12 +18,12 @@ body { margin: 0; width: 100%;}
 .nav_menu>ul>li>a{ text-decoration: none; color: #fff; font-weight: bold; vertical-align: middle; padding: 0 30px 50px; }
 
 /* gnbnav */
-.gnbnav { width: 1180px; margin: 0 auto; z-index: 3000;}
+.gnbnav { width: 1180px; z-index: 3000; margin: 0 auto;}
 
 /* nav_list */
 .nav_list { display: none; width: 100%; height: 200px; list-style: none; position: absolute; top: 90px; left: 0; z-index: 3000; background: #dadada; padding: 0;}
 .nav_list .f_list {  display: none; font-size: 30px; font-weight: bold; padding: 0; float: left; line-height: 200px;}
-.nav_list li { display: inline-block; padding-left: 33.5px}
+.nav_list li { display: inline-block; margin-right: 25px}
 .nav_list a { text-decoration: none; color: #000; }
 
 /* nav_icon */

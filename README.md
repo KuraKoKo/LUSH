@@ -11,3 +11,5 @@ PC 화면 : min-width : 1180px
 테블릿 화면 : min-width: 769px max-width: 1179px
 
 모바일 화면 : min-width: 320px max-width: 768px
+
+슬라이드는 bxslider 라는 플러그인을 사용했습니다.
