@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="./lib/css/main.css"/>
     <link rel="stylesheet" href="./lib/css/tablet.css" media="(min-width: 769px) and (max-width: 1179px)"/>
     <link rel="stylesheet" href="./lib/css/mobile.css" media="(min-width: 320px) and (max-width: 768px)"/>
@@ -47,7 +48,7 @@
                         </ul>
                     </li>
                     <li class="f_nav"><a href="#">BRAND</a>
-                        <ul class="nav_list" style="display: block;">
+                        <ul class="nav_list">
                             <div class="gnbnav">
                                 <li class="f_list"><a href="#">BRAND</a></li>
                                 <li><a href="#">러쉬</a></li>
@@ -83,9 +84,8 @@
                 <!-- m_list -->
                 <div class="m_list">
                     <ul>
-                        <li><a href="#">PRODUCT</a>
-                            <ul class="nav_list">
-                                <div class="m_gnb">
+                        <li class="product"><p>PRODUCT</p>
+                            <ul class="product_list">
                                     <li class="f_list"><a href="#">PRODUCTS</a></li>
                                     <li><a href="#">베스트</a></li>
                                     <li><a href="#">신제품</a></li>
@@ -96,12 +96,10 @@
                                     <li><a href="#">메이크업</a></li>
                                     <li><a href="#">퍼퓸</a></li>
                                     <li><a href="#">선물세트</a></li>
-                                </div>
                             </ul>
                         </li>
-                        <li><a href="#">BARND</a>
-                            <ul class="nav_list">
-                                <div class="m_gnb">
+                        <li class="brand"><p>BRAND</p>
+                            <ul class="brand_list">
                                     <li class="f_list"><a href="#">BRAND</a></li>
                                     <li><a href="#">러쉬</a></li>
                                     <li><a href="#">채러티 팟</a></li>
@@ -109,12 +107,16 @@
                                     <li><a href="#">아티클</a></li>
                                     <li><a href="#">젤러쉬</a></li>
                                     <li><a href="#">ABOUT LUSH</a></li>
-                                </div>
                             </ul>
                         </li>
                         <li><a href="#">SHOP</a></li>
                         <li><a href="#">SPA</a></li>
                         <li><a href="#">EVENT</a></li>
+                        <div class="sign">
+                            <li><a href="#" class="sign_in">로그인</a></li>
+                            <li><a href="#" class="sign_up">회원가입</a></li>   
+                        </div>
+                        
                 <div class="m_close">
                     <span>X</s4pan>
                 </div>
@@ -140,49 +142,72 @@
     <div id="content">
         <!-- wrap -->
         <div class="wrap">
+            <!-- main_about -->
+            <div class="main_about">
+
+                <div class="about_lush">
+                    <h3>About Lush</h3>
+                    <div class="lushlist">
+                        <a href="#"><img src="img/aboutlush.png" alt="aboutlush" /></a>
+                        <img src="img/bath_bomb.gif" alt="배쓰 밤" title="물을 받아둔 욕조에서 사용하며 거품은 적지만 욕조 가득 아름다운 빛깔로채우고"/>
+                        <img src="img/bubble_bar.gif" alt="버블 바" title="수돗물 아래 놓거나 으깨어 물에 마찰시켜 사용하며 풍성한 거품과
+                        향기가 욕조를 가득 채우는 세정력 있는 입욕제입니다."/>
+                    </div>   
+                </div>
+
+                <div class="about_event">
+                    <h3>Event</h3>
+                    <div class="eventlist">
+                        <a href="#"><img src="img/event/event1.png" alt=""/></a>
+                        <a href="#"><img src="img/event/event2.png" alt=""/></a>
+                        <a href="#"><img src="img/event/event3.png" alt=""/></a>
+                    </div>
+                </div>    
+            </div>
+            <!-- //main_about -->
             <!-- bestitem -->
             <div class="bestitem">
-                    <div class="bestitem_title">
-                        <h2>지금 인기있는 상품</h2>
-                    </div>
-                    <div class="bestitem01">
-                            <ul class="item_bxslider">
-                                <li>
-                                    <div class="prdinfo">
-                                        <a href="#">
-                                            <span class="prdImg"><img src="./img/item/bestitem01.png"/></span>
-                                            <span class="prdName">마스크 오브 매그너 민티 125g/315g</span>
-                                            <span class="prdDesc">#데일리팩 #디데이 전날</span>
-                                            <span class="prdPrice">￦ 20,000</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="prdinfo">
-                                        <a href="#">
-                                            <span class="prdImg"><img src="./img/item/bestitem02.jpg"/></span>
-                                            <span class="prdName">29하이 스트리</span>
-                                            <span class="prdDesc">#데일리팩 #디데이 전날</span>
-                                            <span class="prdPrice">￦ 20,000</span>
-                                        </a>
-                                </li>
-                                <li>
-                                        <div class="prdinfo">
-                                                <a href="#">
-                                                    <span class="prdImg"><img src="./img/item/bestitem03.jpg"/></span>
-                                                    <span class="prdName">걸 파워</span>
-                                                    <span class="prdDesc">#버블바 #용기를주는선물</span>
-                                                    <span class="prdPrice">￦ 19,000</span>
-                                                </a>
-                                </li>
-                                <li>
-                                    <div class="prdinfo">
-                                        <a href="#">
-                                            <span class="prdImg"><img src="./img/item/bestitem04.jpg"/></span>
-                                            <span class="prdName">플로팅 플라워</span>
-                                            <span class="prdDesc">#배쓰밤 #청정한향기의입욕</span>
-                                            <span class="prdPrice">￦ 19,000</span>
-                                        </a>
+                <div class="bestitem_title">
+                    <h2>Best Item</h2>
+                </div>
+                <div class="bestitem01">
+                        <ul>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem01.png"/></span>
+                                        <span class="prdName">마스크 오브 매그너 민티 125g/315g</span>
+                                        <span class="prdDesc">#데일리팩 #디데이 전날</span>
+                                        <span class="prdPrice">￦ 20,000</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem02.jpg"/></span>
+                                        <span class="prdName">29하이 스트리</span>
+                                        <span class="prdDesc">#데일리팩 #디데이 전날</span>
+                                        <span class="prdPrice">￦ 20,000</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem03.jpg"/></span>
+                                        <span class="prdName">걸 파워</span>
+                                        <span class="prdDesc">#버블바 #용기를주는선물</span>
+                                        <span class="prdPrice">￦ 19,000</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem04.jpg"/></span>
+                                        <span class="prdName">플로팅 플라워</span>
+                                        <span class="prdDesc">#배쓰밤 #청정한향기의입욕</span>
+                                        <span class="prdPrice">￦ 19,000</span>
+                                    </a>
                                 </li>
                             </ul>
                     </div>
@@ -190,52 +215,73 @@
                         <button type="button" onclick="location.href='#'">더 보기..</button>
                     </div>   
                 </div>
-                <!-- //bestitem --> 
-            <!-- main_about -->
-            <div class="main_about">
-                <div class="main_aboutlush">
-                    <h2 class="about_lush"><img src="img/about_lush.jpg" alt="A Lush Life"/></h2>
-                    <div class="main_text">
-                            <p>
-                                <b>신선한 과일과 채소, 최상의 에센셜 오일,</b>그리고<br/><br/>
-                                <b>안전한 원료</b>를 사용하여 효과적인 제품을,<br/><br/>
-                                <b>동물실험을 하지 않는 회사</b>와 거래하고,<br/><br/>
-                                <b>인체에 직접 테스트 함으로써,</b><br/><br/>
-                                <b>최소한의 포장과 보존제를 사용하여 직접 손으로 제품을 만들고,</b><br/><br/>
-                                <b>우리는 행복한 사람이 행복한 제품</b>을 만들수 있다고 믿으며,<br/><br/>
-                                우리제품이 가진 <b>올바른 가치를 제공</b>하고,<br/><br/>
-                                <b>실수를 하거나,모든 것을 잃고서도 다시</b><br/><br/>
-                                <b>시작할 수 있음을 믿습니다.</b>
-                            </p>
-                    </div>    
+                <!-- //bestitem -->
+            <div class="newitem">
+                <div class="newitem_title">
+                    <h2>신 제품</h2>
                 </div>
-            </div>
-            <!-- //main_about -->
-            <!-- main_explan -->
-            <div class="main_explan">
-                <h2>비슷하지만 달라요</h2>
-                <div class="bath">
+                <div class="newitem01">
+                        <ul>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem01.png"/></span>
+                                        <span class="prdName">마스크 오브 매그너 민티 125g/315g</span>
+                                        <span class="prdDesc">#데일리팩 #디데이 전날</span>
+                                        <span class="prdPrice">￦ 20,000</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem02.jpg"/></span>
+                                        <span class="prdName">29하이 스트리</span>
+                                        <span class="prdDesc">#데일리팩 #디데이 전날</span>
+                                        <span class="prdPrice">￦ 20,000</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem03.jpg"/></span>
+                                        <span class="prdName">걸 파워</span>
+                                        <span class="prdDesc">#버블바 #용기를주는선물</span>
+                                        <span class="prdPrice">￦ 19,000</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <div class="prdinfo">
+                                    <a href="#">
+                                        <span class="prdImg"><img src="./img/item/bestitem04.jpg"/></span>
+                                        <span class="prdName">플로팅 플라워</span>
+                                        <span class="prdDesc">#배쓰밤 #청정한향기의입욕</span>
+                                        <span class="prdPrice">￦ 19,000</span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="newitem01_btn">
+                        <button type="button" onclick="location.href='#'">더 보기..</button>
+                    </div>   
+                </div>
+                <div class="service">
+                    <div class="service_title">
+                        <h2>고객센터 이용안내</h2>
+                    </div>
                     <ul>
-                        <li>
-                            <p><b>배쓰 밤</b></p>
-                            <p class="p_bath"><b>물을 받아둔 욕조에서 사용</b>하며 거품은 적지만 욕조 가득 아름다운 빛깔로<br/>채우고
-                            질 좋은 에센셜 오일이 피부를 촉촉하게 감싸는 입욕제입니다.</p>
+                        <li class="service01">
+                            <img src="img/service.png" alt=""/>
+                            <h4>Tel : 1644-2357</h4><br/>
+                            <h4>EMAIL : webmaster@lush.co.kr</h4>
                         </li>
-                        <li><img src="img/bath_bomb.gif" alt="배쓰 밤"/></li>
+                        <li class="service02">
+                            <h3>고객센터 이용시간</h3>
+                            <p>(평일) 월~금 10:00 ~ 17:00<br/>
+                            <small>(점심시간 12:00 ~ 13:00)</small></p>
+                        </li>
                     </ul>
                 </div>
-                <div class="bubble">
-                        <ul>
-                                <li>
-                                    <p><b>버블 바</b></p>
-                                    <p class="p_bubble"><b>수돗물 아래 놓거나 으깨어 물에 마찰시켜 사용</b>하며 풍성한 거품과<br/>
-                                    향기가 욕조를 가득 채우는 세정력 있는 입욕제입니다.</p>
-                                </li>
-                                <li><img src="img/bubble_bar.gif" alt="버블 바"/></li>
-                            </ul>
-                </div>
-            </div>
-            <!-- //main_explan -->
         </div>
         <!-- //wrap -->
     </div>
