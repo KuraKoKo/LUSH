@@ -66,13 +66,12 @@ body { margin: 0; width: 100%; font-family: "Nanum Gothic", sans-serif;}
 .bestitem01 li{ display: inline-block; text-align: center; }
 
 /* prdinfo */
-.prdinfo { display: inline-block; padding: 0 0 15px 5px; text-align: center; }
-.prdinfo a{ color: #000; text-decoration: none;  }
-.prdinfo span { display: inline-block; }
-.prdinfo .prdImg { display: inline-block; margin: 0; }
-.prdinfo .prdName  { display: block; font-weight: 550; line-height: 10px; margin-bottom: 5px;}
-.prdinfo .prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px; }
-.prdinfo .prdPrice { display: block; padding-top: 20px;}
+.item > li > a{ color: #000; text-decoration: none;  }
+.item > li > a > span { display: inline-block; }
+.prdImg { display: inline-block; margin: 0; }
+.prdName  { display: block; font-weight: 550; line-height: 10px; margin-bottom: 5px;}
+.prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px; }
+.prdPrice { display: block; padding-top: 20px;}
 
 /* bestitem01_btn */
 .bestitem01_btn { display: block; width: 100%; margin-top: -30px;}
