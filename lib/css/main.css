@@ -24,7 +24,7 @@ body { margin: 0; width: 100%; font-family: "Nanum Gothic", sans-serif;}
 .nav_list a { text-decoration: none; color: #000; }
 
 /* nav_icon */
-.nav_icon { display: inline-block; margin: 0; padding: 0; vertical-align: middle;}
+.nav_icon { display: inline-block; margin: 0; padding: 0; vertical-align: middle; position: absolute; top: 10px; right: 180px; }
 .nav_icon li { display: inline-block; padding-left: 60px; }
 .nav_icon a { vertical-align: middle; }
 .nav_icon img { width: 30px; }
@@ -66,12 +66,12 @@ body { margin: 0; width: 100%; font-family: "Nanum Gothic", sans-serif;}
 .bestitem01 li{ display: inline-block; text-align: center; }
 
 /* prdinfo */
-.item > li > a{ color: #000; text-decoration: none;  }
+.item > li > a{ color: #000; text-decoration: none; line-height: 25px; }
 .item > li > a > span { display: inline-block; }
 .prdImg { display: inline-block; margin: 0; }
-.prdName  { display: block; font-weight: bold; line-height: 10px; margin-bottom: 5px;}
-.prdDesc  { display: block; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px; }
-.prdPrice { display: block; padding-top: 20px;}
+.prdName  { display: block; width: 255px; font-weight: bold; line-height: 10px; margin-bottom: 5px;}
+.prdDesc  { display: block; width: 255px; color: #808080; font-size: 14px; line-height: 3px; padding-top: 10px; }
+.prdPrice { display: block;}
 
 /* bestitem01_btn */
 .bestitem01_btn { display: block; width: 100%; margin-top: -30px;}
@@ -82,7 +82,7 @@ body { margin: 0; width: 100%; font-family: "Nanum Gothic", sans-serif;}
 
 /* bestitem_title */
 .newitem_title { display: inline-block; position: relative; text-align: center; width: 1180px; }
-.newitem_title::before { position: absolute; top: 21px; left: 0; right: 0; height: 1px; background: #e0e0e0; content: '';}
+.newitem_title::before { content: ''; position: absolute; top: 21px; left: 0; right: 0; height: 1px; background: #e0e0e0; }
 .newitem_title h2{ display: inline-block; position: relative; background: #fff; color: #222; margin: 0 auto; line-height: 20px; padding: 2px 20px;} 
 
 /* bestitem01 */
